@@ -1,3 +1,26 @@
+# Restaurant Menu
+
+Shopping cart page made with React.
+
+### Live Preview: 
+
+
+
+## Key Features
+
+- Clear cart
+- Remove individual items
+- Change quantity of items
+- Cart total
+- Cart counter
+- Responsive
+
+## Technologies Used
+React, CSS.
+
+#### Written by Christine Lyston
+#### Date: February 2021
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

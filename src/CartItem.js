@@ -3,6 +3,8 @@ import { useGlobalContext } from './context'
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 const CartItem = ({ id, title, price, img, quantity }) => {
+  const { removeItem } = useGlobalContext();
+
   return (
     <article className="cart-item">
       <div className="item-details">
@@ -10,7 +12,7 @@ const CartItem = ({ id, title, price, img, quantity }) => {
         <div>
           <h4>{title}</h4>
           <p className="item-price">£{price}</p>
-          <button className="remove-button" onClick={() => console.log('remove item')}>Remove</button>
+          <button className="remove-button" onClick={() => removeItem(id)}>Remove</button>
         </div>
       </div>
       <div className="quantity-box">
