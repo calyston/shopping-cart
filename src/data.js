@@ -1,4 +1,4 @@
-export cartItems[
+const products = [
   {
     id: 1,
     title: 'Metal Gear Solid 3: Snake Eater',
@@ -27,6 +27,13 @@ export cartItems[
     img: 'https://m.media-amazon.com/images/M/MV5BZDcyZjg4ZDktODliNy00NDVkLWE1NzctYzUzNTNkMWIyY2I1XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UY209_CR3,0,140,209_AL_.jpg',
     amount: 1,
   },
+  {
+    id: 5,
+    title: "Devil May Cry 3: Dante's Awakening",
+    price: 25,
+    img: 'https://m.media-amazon.com/images/M/MV5BY2I2OTYxY2QtNDY4ZC00MDRkLTljOGEtZGE4ZmM0NjVlNzE0XkEyXkFqcGdeQXVyNTk1ODMyNjA@._V1_UY209_CR12,0,140,209_AL_.jpg',
+    amount: 1,
+  },
 ];
 
-export default cartItems;
+export default products;
