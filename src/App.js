@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useGlobalContext } from './context';
 import Navbar from './Navbar';
 import CartContainer from './CartContainer';
 import logo from './shopping-cart.png';
@@ -11,8 +12,8 @@ function App() {
       <div className="page-container">
         <header>
           <img src={logo} alt="shopping-cart" />
-          <h2>Your Bag</h2>
         </header>
+        <CartContainer />
       </div>
     </main>
   );

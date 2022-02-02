@@ -1,4 +1,4 @@
-export default [
+export cartItems[
   {
     id: 1,
     title: 'Metal Gear Solid 3: Snake Eater',
@@ -28,3 +28,5 @@ export default [
     amount: 1,
   },
 ];
+
+export default cartItems;
