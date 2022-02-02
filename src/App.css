@@ -1,38 +1,259 @@
-.App {
+/* CSS Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style :none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align :middle;
+}
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
+  cursor: default;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p, li, span, a, label, input, textarea {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+li {
+  list-style-position: inside;
+}
+
+/* Page Sections */
+
+.page-container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+  .page-container {
+    width: 80%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1200px) {
+  .page-container {
+    max-width: 1200px;
+  }
+}
+
+article {
+  margin: 2.5rem 0;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+/* Buttons */
+
+button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0;
+  margin: 1rem 0;
+  width: fit-content;
+  background-color: gainsboro;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightskyblue;
+}
+
+/* Forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border: 1px solid lightgrey;
+  padding: 0.5rem 1rem;
+  max-width: 400px;
+  margin: 0.5rem 0;
+}
+
+/* Nav Bar */
+
+nav {
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 5rem;
+  height: auto;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav-links li {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+  width: 33%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add To Bag */
+.cart-container {
+  width: fit-content;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-button {
+  border: none;
+  background: transparent;
+}
+
+.cart-button svg {
+  width: 4rem;
+  height: auto;
+}
+
+.cart-button:hover {
+  background: transparent;
+}
+
+#counter-circle {
+  position: absolute;
+  left: 5rem;
+  top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  font-size: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 2;
 }
