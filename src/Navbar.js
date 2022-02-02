@@ -5,12 +5,13 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 
 const Navbar = () => {
+  const { quantity } = useGlobalContext()
   return (
     <nav>
       <div className="nav-container">
         <img id="logo" src={logo} alt="" />
         <div className="cart-container">
-          <p id="counter-circle">3</p>
+          <p id="counter-circle">{quantity}</p>
           <button className="cart-button"><FaShoppingCart /></button>
         </div>
       </div>
