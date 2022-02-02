@@ -257,3 +257,54 @@ header img {
   border-radius: 50%;
   z-index: 2;
 }
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-details {
+  display: flex;
+}
+
+.item-details h4 {
+  font-size: 1.6rem;
+}
+
+.item-details img {
+  width: 10rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+  .item-details h4 {
+    font-size: 2rem;
+  }
+  
+  .item-details img {
+    width: 15rem;
+    margin-right: 3rem;
+  }
+}
+
+.remove-button:hover, .clear-cart:hover {
+  background-color: red;
+}
+
+.quantity-button {
+  background-color: transparent;
+  padding: 0;
+}
+
+.quantity-button:hover {
+  background-color: transparent;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
