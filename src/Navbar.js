@@ -3,7 +3,6 @@ import { useGlobalContext } from './context'
 import logo from './shopping-cart.png';
 import { FaShoppingCart } from 'react-icons/fa';
 
-
 const Navbar = () => {
   const { quantity } = useGlobalContext()
   return (

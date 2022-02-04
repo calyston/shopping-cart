@@ -1,4 +1,4 @@
-import React, { useState, useContext, useReducer, useEffect } from 'react'
+import React, { useContext, useReducer, useEffect } from 'react'
 import cartItems from './data'
 import reducer from './reducer'
 const AppContext = React.createContext()
@@ -8,6 +8,7 @@ const initialState = {
   total: 0,
   quantity: 0,
 }
+
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
