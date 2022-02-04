@@ -294,6 +294,14 @@ header img {
   background-color: red;
 }
 
+.quantity-box {
+  text-align: center;
+}
+
+.quantity-box p {
+  font-weight: bold;
+}
+
 .quantity-button {
   background-color: transparent;
   padding: 0;
