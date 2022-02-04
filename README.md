@@ -1,4 +1,4 @@
-# Restaurant Menu
+# Shopping Cart
 
 Shopping cart page made with React.
 
